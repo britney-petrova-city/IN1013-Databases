@@ -8,7 +8,7 @@ CREATE TABLE petPet (
   petname VARCHAR(20) PRIMARY KEY,
   owner VARCHAR(45) NOT NULL,
   species VARCHAR(45) NOT NULL,
-  gender ENUM('M', 'F') NOT NULL,
+  gender ENUM('M', 'F') DEFAULT NULL,
   birth DATE,
   death DATE
 );
